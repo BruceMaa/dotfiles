@@ -59,12 +59,10 @@ MAVEN_HOME=/usr/local/opt/maven
 #TOMCAT_HOME=~/Documents/tomcat
 TOMCAT_HOME=/usr/local/opt/tomcat
 ANDROID_HOME=~/Library/Android/sdk
-GPG_HOME=/usr/local/opt/gnupg
 
 #PATH=$MAVEN_HOME/bin:$PATH
 #PATH=$TOMCAT_HOME/bin:$PATH
 PATH=$ANDROID_HOME/tools:$PATH
-PATH=$GPG_HOME/libexec/gpgbin:$PATH
 
 # Golang
 GOROOT=/Users/Bruce/Go
