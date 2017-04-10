@@ -1,0 +1,8 @@
+alias l.='ls -d .* -G'
+alias ll='ls -l -G'
+alias ls='ls -G'
+alias la='ls -l -G -a'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias vim='mvim'
