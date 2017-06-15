@@ -52,7 +52,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git brew z)
 
 # User configuration
-JAVA_HOME=/Library/Java/JavaVirtualMachines/default/Contents/Home
+JAVA_HOME=$(/usr/libexec/java_home)
 GRADLE_HOME=/usr/local/opt/gradle/libexec
 #MAVEN_HOME=~/Documents/maven
 MAVEN_HOME=/usr/local/opt/maven
@@ -154,6 +154,7 @@ alias -s c=vi
 alias -s java=vi
 alias -s txt=vi
 alias -s xml=vi
+alias -s md=macdown
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
