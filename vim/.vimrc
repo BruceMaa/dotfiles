@@ -1,7 +1,7 @@
 
-" 		
+"
 " Vundle 配置开始
-" 		
+"
 set nocompatible              " 去除VI一致性,必须
 filetype off                  " 必须
 
@@ -62,9 +62,9 @@ filetype plugin on
 " 将你自己对非插件片段放在这行之后
 
 
-" 		
+"
 " 基本配置
-" 		
+"
 
 " 设置文件编码
 set encoding=utf-8
@@ -131,9 +131,9 @@ colorscheme molokai
 "记录命令历史的行数
 set history=1000
 
-" 		
+"
 " 搜索设置
-" 		
+"
 "
 " 自动转义
 set magic
@@ -150,9 +150,9 @@ set incsearch
 " 不重新搜索
 set nowrapscan
 
-" 		
+"
 " 代码设置
-" 		
+"
 
 " 设置语法高亮
 syntax enable
@@ -195,9 +195,9 @@ set sidescroll=10
 
 
 
-" 		
+"
 " 缩进设置
-" 		
+"
 
 " 自动缩进
 set autoindent

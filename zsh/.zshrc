@@ -53,21 +53,35 @@ plugins=(git brew z)
 
 # User configuration
 JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME
 GRADLE_HOME=/usr/local/opt/gradle/libexec
-#MAVEN_HOME=~/Documents/maven
+export GRADLE_HOME
 MAVEN_HOME=/usr/local/opt/maven
-#TOMCAT_HOME=~/Documents/tomcat
+export MAVEN_HOME
 TOMCAT_HOME=/usr/local/opt/tomcat
+export TOMCAT_HOME
 ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_HOME
+#Groovy环境变量
+GROOVY_HOME=/usr/local/opt/groovy/libexec
+export GROOVY_HOME
+
 
 #PATH=$MAVEN_HOME/bin:$PATH
 #PATH=$TOMCAT_HOME/bin:$PATH
 PATH=$ANDROID_HOME/tools:$PATH
 
 # Golang
-GOROOT=/Users/Bruce/Go
-GOPATH=/Users/Bruce/GoPackage
-PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+# GOROOT=/Users/Bruce/Go
+GOPATH=/Users/Bruce/Code/GoPackage
+# PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+# export GOROOT
+export GOPATH
+PATH=$GOPATH/bin:$PATH
+
+#groovy环境变量
+groovy_home=/usr/local/opt/groovy/libexec
+export GROOVY_HOME
 
 # curl
 PATH=/usr/local/opt/curl/bin:$PATH
@@ -75,13 +89,6 @@ PATH=/usr/local/opt/curl/bin:$PATH
 # openssl
 PATH=/usr/local/opt/openssl/bin:$PATH
 
-export JAVA_HOME
-export GRADLE_HOME
-export MAVEN_HOME
-export TOMCAT_HOME
-export ANDROID_HOME
-export GOROOT
-export GOPATH
 export PATH=/usr/local/sbin:$PATH
 
 # nvm
@@ -89,13 +96,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
 
 #pyenv
-PYENV_ROOT=/usr/local/var/pyenv
+#PYENV_ROOT=/usr/local/var/pyenv
+#export PYENV_ROOT
 #pyenv 国内镜像
-PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
-export PYENV_ROOT
-export PYTHON_BUILD_MIRROR_URL
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+#PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
+#export PYTHON_BUILD_MIRROR_URL
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+#if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 #开启shadowsocks
 enable_proxy() {
@@ -106,10 +113,6 @@ enable_proxy() {
 disable_proxy() {
     unset ALL_PROXY
 }
-
-#Groovy环境变量
-GROOVY_HOME=/usr/local/opt/groovy/libexec
-export GROOVY_HOME
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -124,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-REACT_EDITOR=atom
+REACT_EDITOR=subl
 HOMEBREW_EDITOR=vim
 
 # Compilation flags
