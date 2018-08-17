@@ -11,6 +11,6 @@ set guioptions-=R
 " set guioptions-=m
 " set guioptions-=T
 " 设置默认字体
-" set guifont=ProFont_for_Powerline:h13
 set guifont=Space_Mono_for_Powerline:h13
-
+" 透明背景,数字越大，越透明
+set transparency=10
