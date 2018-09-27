@@ -92,8 +92,8 @@ PATH=/usr/local/opt/openssl/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 # nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
 
 #pyenv
 #PYENV_ROOT=/usr/local/var/pyenv
@@ -127,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-REACT_EDITOR=subl
+REACT_EDITOR=vim
 HOMEBREW_EDITOR=vim
 
 # Compilation flags
