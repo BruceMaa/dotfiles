@@ -78,6 +78,8 @@ GOPATH=/Users/Bruce/Code/GoPackage
 # export GOROOT
 export GOPATH
 PATH=$GOPATH/bin:$PATH
+# A global proxy for go modules
+export GOPROXY=https://goproxy.io
 
 #groovy环境变量
 groovy_home=/usr/local/opt/groovy/libexec
