@@ -49,7 +49,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew)
+plugins=(git brew z.lua)
 
 # User configuration
 JAVA_HOME=$(/usr/libexec/java_home)
@@ -80,6 +80,9 @@ export GOPATH
 PATH=$GOPATH/bin:$PATH
 # A global proxy for go modules
 export GOPROXY=https://goproxy.io
+
+# Rust
+PATH=$HOME/.cargo/bin:$PATH
 
 #groovy环境变量
 groovy_home=/usr/local/opt/groovy/libexec

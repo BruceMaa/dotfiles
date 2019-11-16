@@ -15,3 +15,5 @@ HOMEBREW_EDITOR=vim
 
 export NVM_DIR="/Users/Bruce/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.cargo/bin:$PATH"
