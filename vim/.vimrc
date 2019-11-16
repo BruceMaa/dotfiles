@@ -216,3 +216,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 let g:NERDTreeShowIgnoredStatus = 1
+
+" Rust配置
+let g:rustfmt_autosave = 1
