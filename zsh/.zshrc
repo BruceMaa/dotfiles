@@ -83,6 +83,8 @@ export GOPROXY=https://goproxy.io
 
 # Rust
 PATH=$HOME/.cargo/bin:$PATH
+# 设置清华源
+export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 #groovy环境变量
 groovy_home=/usr/local/opt/groovy/libexec
