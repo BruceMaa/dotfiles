@@ -171,3 +171,7 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/Bruce/.sdkman"
+[[ -s "/Users/Bruce/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Bruce/.sdkman/bin/sdkman-init.sh"
