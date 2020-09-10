@@ -52,23 +52,9 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git brew z.lua)
 
 # User configuration
-JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_HOME
-GRADLE_HOME=/usr/local/opt/gradle/libexec
-export GRADLE_HOME
-MAVEN_HOME=/usr/local/opt/maven
-export MAVEN_HOME
-TOMCAT_HOME=/usr/local/opt/tomcat
-export TOMCAT_HOME
+
 ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_HOME
-#Groovy环境变量
-GROOVY_HOME=/usr/local/opt/groovy/libexec
-export GROOVY_HOME
-
-
-#PATH=$MAVEN_HOME/bin:$PATH
-#PATH=$TOMCAT_HOME/bin:$PATH
 PATH=$ANDROID_HOME/tools:$PATH
 
 # Golang
@@ -85,10 +71,7 @@ export GOPROXY=https://goproxy.io
 PATH=$HOME/.cargo/bin:$PATH
 # 设置清华源
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
-
-#groovy环境变量
-groovy_home=/usr/local/opt/groovy/libexec
-export GROOVY_HOME
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 # curl
 PATH=/usr/local/opt/curl/bin:$PATH
