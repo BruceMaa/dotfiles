@@ -202,7 +202,7 @@ let NERDTreeAutoCenter = 1
 let NERDTreeShowHidden = 1
 
 " nerdtree-git-plugin"
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
@@ -215,7 +215,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-let g:NERDTreeShowIgnoredStatus = 1
+let g:NERDTreeGitStatusShowIgnored = 1
 
 " Rust配置
 let g:rustfmt_autosave = 1
